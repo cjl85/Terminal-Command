@@ -10,10 +10,10 @@ module.exports.ls = () => {
  });
 };
 
-module.exports.touch = (file) => {
+module.exports.touch = (name) => {
   fs.writeFile('message.txt', 'Hello World!', (err) => {
      if (err)
-	     return console.log(err);
+	     return console.log(`${name} was created`);
 
   console.log(file);
 };
@@ -23,5 +23,5 @@ module.exports.mkdir = (dir) => {
    if (err)
       return console.error(err);
 
-   console.log(dir)
+   console.log(`${dir} was created`)
 };

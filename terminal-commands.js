@@ -10,18 +10,18 @@ module.exports.ls = () => {
  });
 };
 
-module.exports.touch = () => {
+module.exports.touch = (file) => {
   fs.writeFile('message.txt', 'Hello World!', (err) => {
      if (err)
 	     return console.log(err);
 
-  console.log("File made");
+  console.log(file);
 };
 
-module.exports.mkdir = () => {
+module.exports.mkdir = (dir) => {
   fs.mkdir('./test', (err) => {
    if (err)
       return console.error(err);
 
-   console.log('Directory made')
+   console.log(dir)
 };

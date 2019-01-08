@@ -11,7 +11,7 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = (name) => {
-  fs.writeFile('message.txt', 'Hello World!', (err) => {
+  fs.writeFile(text, message, (err) => {
      if (err)
 	     return console.log(`${name} was created`);
 

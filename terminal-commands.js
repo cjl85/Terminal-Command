@@ -19,7 +19,7 @@ module.exports.touch = (name) => {
 };
 
 module.exports.mkdir = (dir) => {
-  fs.mkdir('./test', (err) => {
+  fs.mkdir(dir, (err) => {
    if (err)
       return console.error(err);
 
